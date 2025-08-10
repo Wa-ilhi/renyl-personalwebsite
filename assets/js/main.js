@@ -231,4 +231,13 @@ if (preloader) {
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  // Example: fill progress bars based on data-progress attribute
+  document.querySelectorAll('.skills .skill-item .progress .progress-bar').forEach(bar => {
+    const targetWidth = bar.dataset.progress || "0%"; // default 70%
+    setTimeout(() => {
+      bar.style.width = targetWidth;
+    }, 100); // slight delay to trigger transition
+  });
+
+
 })();
