@@ -371,6 +371,62 @@ h6 {
   text-align: center;
 }
 
+
+ #footer .visitors {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #1f6feb, #58a6ff);
+      box-shadow: 0 4px 10px rgba(31, 111, 235, 0.4);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Eye icon */
+    .visitors i {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    /* Number animation */
+    .visitors span {
+      font-weight: bold;
+      font-size: 20px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Glow effect when number changes */
+    .highlight {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 15px #58a6ff, 0 0 20px #1f6feb;
+      transition: text-shadow 0.4s ease-in-out;
+    }
+
+    .footer-divider {
+  width: 60%;
+  margin: 10px auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #555, transparent);
+}
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
